@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+#queries {
+    margin-top: 100px;
+}
+#results div {
+    font-size: 24px;
+}
+input {
+    display: inline-block;
+}
+section {
+    text-align: center;
+    margin-bottom: 100px;
+}
+li {
+    display: block;
+}

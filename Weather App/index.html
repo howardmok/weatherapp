@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Weather App</h1>
+    </section>
+    <section id="queries">
+        <input type="text" id="city" placeholder="Type city name">
+        <button type="submit" onclick="searchCity()">Search</button>
+        OR
+        <input type="number" id="lat" placeholder="Type latitude">
+        <input type="number" id="lon" placeholder="Type longitude">
+        <button type="submit" onclick="searchLatLon()">Search</button>
+        OR
+        <input type="number" id="zip" placeholder="Type ZIP code">
+        <button type="submit" onclick="searchZIP()">Search</button>
+    </section>
+    <section id="results">
+        <h1>
+            <span>Results for</span>
+            <span id="location"></span>
+        </h1>
+        <div>
+            <span>Temperature: </span>
+            <div id="temperature"></div>
+        </div>
+        <div>
+            <span>Humidity: </span>
+            <div id="humidity"></div>
+        </div>
+        <div>
+            <span>Pressure: </span>
+            <div id="pressure"></div>
+        </div>
+        <button id="fahrCels" onclick="changeMetric()"></button>
+    </section>
+    <section>
+        <h1>Most recent searches
+        </h1>
+        <div id="recent">
+        </div>
+    </section>
+</body>
+</html>
